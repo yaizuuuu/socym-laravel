@@ -34,7 +34,8 @@ services:
       - '33062:3306'
 
   mailhog:
-    image: mailhog/mailhog
+    image         : mailhog/mailhog
+    container_name: socym-laravel-mailhog
     ports:
       - "8025:8025"
       - "1025:1025"
